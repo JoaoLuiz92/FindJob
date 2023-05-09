@@ -1,0 +1,42 @@
+  <div id="add-form-container" class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center">Divulgue a vaga preenchendo o formulário</h1>
+        </div>
+        <div id="form-box" class="col-md-12">
+            <h2>Preencha os dados da melhor forma possivel para encontrar mais rapido seu dev!</h2>
+            <form action="/jobs/add" method="POST">
+                <div class="form-group">
+                    <label for="title">Titulos da vaga:</label>
+                    <input type="text" class="form-control" id="title" name= "title" placeholder="Digite o titulo da sua vaga">
+                    <small id="titleHelp" class="form-text text-muted">O titulo é muito importante, seja claro e objetivo</small> 
+                </div>
+
+                <div class="form-group">
+                    <label for="title">Descrição da vaga:</label>
+                    <input type="text" class="form-control" id="description" name= "description" placeholder="Descreva as atividades">
+                </div>
+
+
+                <div class="form-group">
+                    <label for="title">Salario:</label>
+                    <input type="text" class="form-control" id="salary" name= "salary" placeholder="Digite o salario proprosto para a vaga">
+                    <small id="titleHelp" class="form-text text-muted">Coloque o salario</small> 
+                </div>
+
+                <div class="form-group">
+                    <label for="title">Empresa</label>
+                    <input type="text" class="form-control" id="company" name= "company" placeholder="Nome da empresa que adicionou a vaga de emprego">
+            
+                </div>
+
+                <div class="form-group">
+                    <label for="title">Contato:</label>
+                    <input type="text" class="form-control" id="email" name= "emial" placeholder="Digite aqui o email para contato da vaga">
+                </div>
+                <input type="hidden" name="new_job" value="1">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </div>
+  </div>
